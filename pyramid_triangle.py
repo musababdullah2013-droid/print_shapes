@@ -4,7 +4,7 @@ def line(n):
     for i in range(n):
         print("* ", end="")
 
-def line_without_space(n):
+def line_wthut_spcs(n):
     for i in range(n):
         print("*", end="")
 
@@ -92,8 +92,22 @@ def print_triangle_right_aligned(m):
         
 # print_triangle_right_aligned(7)
 # Work in progress
+
+k = input ("Give me a number here -----> ")
+#  *
+# ***
+#***** 
 def normal_triangle(m):
-    for i in range(m):
-        for j in range(i):
+    l = (m+1)/2
+    p = int(l) #had to make int because whenever you divide python automatically converts to a float
+    k = (m-1)/2
+    o = int(k) #footnote above
+    for i in range(p):
+        for j in range(o):
             print(" ", end="")
+        o = o-1
+        line_wthut_spcs(i*2+1)
         print("")
+
+n = int(k)
+normal_triangle(n)

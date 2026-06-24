@@ -93,7 +93,7 @@ def print_triangle_right_aligned(m):
 # print_triangle_right_aligned(7)
 # Work in progress
 
-k = input ("Give me a number here -----> ")
+k = input ("Give me a number here (odd numbers only) -----> ")
 #  *
 # ***
 #***** 

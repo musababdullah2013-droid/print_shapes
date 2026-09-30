@@ -93,7 +93,7 @@ def print_triangle_right_aligned(m):
 # print_triangle_right_aligned(7)
 # Work in progress
 
-k = input ("Give me a number here (odd numbers only) -----> ")
+#k = input ("Give me a number here (odd numbers only) -----> ")
 #  *
 # ***
 #***** 
@@ -109,5 +109,67 @@ def normal_triangle(m):
         line_wthut_spcs(i*2+1)
         print("")
 
-n = int(k)
-normal_triangle(n)
+#n = int(k)
+#normal_triangle(n)
+
+def calculator():
+    equation = input ("Select your symbol (+,-,*,/) ----> ")
+    if equation == "+":
+        a = int(input("Input first number here: "))
+        a2 = int(input("Input second number here: "))
+        trl_a = input("Do you want more values?(Say Y for yes and N for no) ").upper()
+        if trl_a == "Y":
+            print("Currently only 2 values can be inputed in the code sooo...")
+            print("System_self_destruct_in_progress...")
+            exit()
+        if trl_a == "N":
+            pass
+        ans_a = a+a2
+        print (f"Your answer is {ans_a}")
+    if equation == "-":
+        s = int(input("Input your first number here: "))
+        s2 = int(input("Input your second number here: "))
+        trl_s = input("Do you want more values?(Say Y for yes and N for no) ").upper()
+        if trl_s == "Y":
+            print("Currently only 2 values can be inputed in the code sooo...")
+            print("System_self_destruct_in_progress...")
+            exit()
+        if trl_s == "N":
+            pass
+        ans_s = s-s2
+        print (f"Your answer is {ans_s}")
+    if equation == "*":
+        m = int(input("Input your first number here: "))
+        m2 = int(input("Input your second number here: "))
+        trl_m = input("Do you want more values?(Say Y for yes and N for no) ").upper()
+        if trl_m == "Y":
+            print("Currently only 2 values can be inputed in the code sooo...")
+            print("System_self_destruct_in_progress...")
+            exit()
+        if trl_m == "N":
+            pass
+        ans_m = m*m2
+        print(f"Your answer is {ans_m}")
+    if equation == "/":
+        d = int(input("Input your first number here: "))
+        d2 = int(input("Input your second number here: "))
+        trl_d = input("Do you want more values?(Say Y for yes and N for no) ").upper()
+        if trl_d == "Y":
+            print("Currently only 2 values can be inputed in the code sooo...")
+            print("System_self_destruct_in_progress...")
+            exit()
+        if trl_d == "N":
+            pass
+        if d2 == 0:
+            print("Error: Cannot divide by zero!")
+            exit()
+        ans_d = d/d2
+        print(f"Your answer is {ans_d}")
+
+    else:
+        print("Some parts are still not finished or you have attempted to put some malicious code or you put random stuff :p")
+        print("System_self_destruct_in_progress...")
+        exit()
+
+calculator()
+
